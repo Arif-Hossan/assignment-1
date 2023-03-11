@@ -1,0 +1,117 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    color: #444444;
+}
+@font-face {
+    font-family: 'raleway-regular';
+    src: url(./fonts/Raleway/Raleway-Regular.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'raleway-semibold';
+    src: url(./fonts/Raleway/Raleway-SemiBold.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'roboto-extralight';
+    src: url(./fonts/Roboto/Roboto-Thin.ttf) format('truetype');
+}
+
+header{
+    background-image: url(./images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 200px;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 30px 0;
+    animation: image-anim 3s ease-in 1s infinite forwards;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 30px 0;
+    animation: image-anim 3s ease-in 1s infinite forwards;
+}
+
+.col-2 h1{
+    font-family: 'raleway-regular';
+    font-size: 48px;
+}
+.col-2 h2{
+    font-family: 'raleway-semibold';
+    font-size: 104px;
+}
+.btn{
+    display: inline-block;
+    background: #00ACF1;
+    color: #FFFFFF;
+    padding: 12px 32px;
+    font-family: 'raleway-semibold';
+    font-size: 20px;
+    border: none;
+    border-radius: 8px;
+    top: 38px;
+}
+h3{
+    font-family: 'roboto-extralight';
+    font-size: 36px;
+}
+
+.circle{
+    position: relative;
+    width: 1000px;
+    height: 1000px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.text{
+    height: 100%;
+    width: 100%;
+    animation: circle-anim 8s ease-out infinite reverse;
+}
+
+
+@keyframes image-anim{
+    0%{
+        right: -100%;
+    }
+    100%{
+        right:0;
+    }
+}
+@keyframes circle-anim{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.text span{
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform-origin:0 450px;
+}
+
